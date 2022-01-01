@@ -1,12 +1,26 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+
   --color-gray-100: hsl(270deg 25% 96%);
   --color-gray-300: hsl(270deg 17% 84%);
   --color-gray-500: hsl(270deg 17% 72%);
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+}
+
+html {
+  --font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
+  --weight-thin: 100;
+  --weight-extra-light: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  --weight-black: 900;
 }
 
 html,
@@ -33,6 +47,37 @@ footer {
   justify-content: space-between;
   max-width: calc(1200 / 16 * 1rem);
   margin: 0 auto;
+  font-family: var(--font-family);
+}
+
+footer .logo {
+  font-weight: var(--weight-black);
+}
+
+footer .sublogo {
+  font-weight: var(--weight-medium);
+  font-style: italic;
+  color: var(--color-gray-500);
+}
+
+footer .person-name {
+  color: var(--color-gray-300);
+  font-weight: var(--weight-bold);
+}
+
+footer .legal {
+  color: var(--color-gray-700);
+  font-weight: var(--weight-regular);
+}
+
+footer .links h2 {
+  color: var(--color-gray-700);
+  font-weight: var(--weight-bold);
+}
+
+footer .links a {
+  color: var(--color-gray-100);
+  font-weight: var(--weight-medium);
 }
 
 .meta {
